@@ -1,0 +1,31 @@
+.orange {
+    background-color: #e53d23;
+     
+    }
+
+
+    .mijn-carousel {
+  max-width: 1800px;   /* breedte */
+  margin: 0 auto;     /* gecentreerd */
+}
+
+.mijn-carousel .carousel-item img {
+  height: 450px;      /* hoogte */
+  object-fit: cover;  /* afbeelding bijsnijden zonder vervorming */
+}
+.list-group-item-licht-orange {
+  background: linear-gradient(135deg, #F5975D 100%);
+  color: white;
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.aside-title {
+  background: linear-gradient(135deg, #e53d23 100%);
+  color: white;
+  margin: 0;
+  padding: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
