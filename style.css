@@ -87,8 +87,8 @@ meter {
 }
 
 /* revert for bug in Chromium browsers
-   - fix for the content editable attribute will work properly.
-   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+ - fix for the content editable attribute will work properly.
+- webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
 :where([contenteditable]:not([contenteditable="false"])) {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
@@ -143,3 +143,23 @@ meter {
   font-size: 1.3rem;
   font-weight: 700;
 }
+.dropdown-menu {
+  min-width: auto;
+  white-space: nowrap;
+}
+.dropdown-menu {
+    min-width: auto;
+    width: fit-content;
+    position: static;
+    float: none;
+    box-shadow: none;
+    
+  }
+  
+  .dropdown-menu .dropdown-item {
+    padding: 0.5rem 0rem;
+  }
+  .dropdown-item:hover {
+    background-color: #F5975D;
+    color: white;
+  }
