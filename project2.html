@@ -1,147 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl-BE">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>naam</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
-    </script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
-  <link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
-</head>
+    <title>Project 2 - Slimme temperatuurmeter</title>
 
+    <link rel="stylesheet" href="./css/reset.css" />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-<body>
-  
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-<header>
-<nav class="navbar navbar-expand-lg orange">
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg orange">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="./images/images/logo.png" alt="logo" width="70" />
+          </a>
+
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  aria-current="page"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projecten
+                </a>
+
+                <ul class="dropdown-menu list-group-item-licht-orange">
+                  <li>
+                    <a class="dropdown-item" href="project1.html">Project 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="project2.html">Project 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="project3.html">Project 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="project4.html">Project 4</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="project5.html">Project 5</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="project6.html">Project 6</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-5">
+      <section class="text-center mb-5">
+        <h1 class="fw-bold text-dark">Slimme temperatuurmeting</h1>
+      </section>
+
+      <section class="project-detail">
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <figure class="mb-4">
+              <img
+                src="images/images/slimme terpratuur.jpg"
+                alt="Breadboard met microcontroller en temperatuursensor"
+                class="project-image"
+              />
+            </figure>
+
+            <article class="mb-4">
+              <h2 class="fw-bold text-dark mb-3">Slimme temperatuurmeting</h2>
+
+              <p class="text-muted lh-lg">
+                Voor dit project heb ik een slimme temperatuurmeter gemaakt met
+                een ESP32. De ESP32 leest de temperatuur uit via een
+                temperatuursensor en toont de waarde op een eenvoudige
+                webpagina. Tijdens dit project heb ik geleerd hoe ik een sensor
+                aansluit, hoe ik data uitlees met code en hoe ik die informatie
+                zichtbaar maak voor de gebruiker. Dit project past goed bij
+                Internet of Things, omdat hardware, software en internet met
+                elkaar worden verbonden. De temperatuurmeter kan later
+                uitgebreid worden met extra functies, zoals een waarschuwing bij
+                te hoge temperatuur of het opslaan van meetgegevens.
+              </p>
+            </article>
+          </div>
+
+          <aside class="col-lg-4">
+            <section
+              class="card border-0 shadow-sm list-group-item-licht-orange"
+            >
+              <div class="card-body">
+                <h2 class="fw-bold text-dark mb-3">Andere projecten</h2>
+
+                <ul class="list-unstyled">
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a
+                      href="project1.html"
+                      class="text-decoration-none text-primary fw-bold"
+                      >Project 1</a
+                    >
+                  </li>
+
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a
+                      href="project2.html"
+                      class="text-decoration-none text-muted"
+                      >Project 2</a
+                    >
+                  </li>
+
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a
+                      href="project3.html"
+                      class="text-decoration-none text-primary fw-bold"
+                      >Project 3</a
+                    >
+                  </li>
+
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a
+                      href="project4.html"
+                      class="text-decoration-none text-primary fw-bold"
+                      >Project 4</a
+                    >
+                  </li>
+
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a
+                      href="project5.html"
+                      class="text-decoration-none text-primary fw-bold"
+                      >Project 5</a
+                    >
+                  </li>
+
+                  <li class="mb-2 pb-2">
+                    <a
+                      href="project6.html"
+                      class="text-decoration-none text-primary fw-bold"
+                      >Project 6</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5 mt-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <figure> <img src="./images/images/logo.png" alt="logo" width="70"></figure>
-        </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Projecten
-              </a>
-              <ul class="dropdown-menu list-group-item-licht-orange ">
-                <li><a class="dropdown-item dropdown-item:hover" href="project1.html">Project 1</a></li>
-                <li><a class="dropdown-item dropdown-item:hover" href="project2.html">Project 2</a></li>
-                <li><a class="dropdown-item dropdown-item:hover" href="project3.html">Project 3</a></li>
-                <li><a class="dropdown-item dropdown-item:hover" href="project4.html">Project 4</a></li>
-                <li><a class="dropdown-item dropdown-item:hover" href="project5.html">Project 5</a></li>
-                <li><a class="dropdown-item dropdown-item:hover" href="project6.html">Project 6</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-
-          </ul>
-          
+        <div class="row text-center">
+          <div class="col text-center footer-item">
+            <p class="text-danger fw-bold">
+              &copy; <span id="year"></span> Tristan
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
-</header>
-
-
- <main class="container py-5">
-    
-    
-    <section class="text-center mb-5">
-      <h1 class="fw-bold text-dark">Project titel</h1>
-    </section>
- 
-    
-    <section>
-      <article class="row g-4">
-        
-        
-        <section class="col-lg-8">
-          
-          
-          <article class="mb-4">
-            <img src="images/images/afbeelding1.jpg" alt="Project afbeelding" class="placeholder-project" style="height: 300px; display: flex; align-items: center; justify-content: center;">
-              
-          </article>
- 
-          
-          <article class="mb-4">
-            <h2 class="fw-bold text-dark mb-3">Project titel</h2>
-            <p class="text-muted lh-lg">
-             Korte beschrijving van het project.
-            </p>
-            <p class="text-muted lh-lg">
-              
-            </p>
-          </article>
- 
-        </section>
- 
-        
-        <aside class="col-lg-4">
-          <article class="card border-0 shadow-sm list-group-item-licht-orange ">
-            <article class="card-body">
-              <h3 class="fw-bold text-dark mb-3">Andere projecten</h3>
-              
-              <ul class="list-unstyled ">
-                <li class="mb-2 pb-2 border-bottom">
-                  <a href="project1.html" class="text-decoration-none text-primary fw-bold">Project 1</a>
-                </li>
-                <li class="mb-2 pb-2 border-bottom">
-                  <a href="project2.html" class="text-decoration-none text-muted">Project 2</a>
-                </li>
-                <li class="mb-2 pb-2 border-bottom">
-                  <a href="project3.html" class="text-decoration-none text-primary fw-bold">Project 3</a>
-                </li>
-                <li class="mb-2 pb-2 border-bottom">
-                  <a href="project4.html" class="text-decoration-none text-primary fw-bold">Project 4</a>
-                </li>
-                <li class="mb-2 pb-2 border-bottom">
-                  <a href="project5.html" class="text-decoration-none text-primary fw-bold">Project 5</a>
-                </li>
-                <li class="mb-2 pb-2">
-                  <a href="project6.html" class="text-decoration-none text-primary fw-bold">Project 6</a>
-                </li>
-              </ul>
- 
-            </article>
-          </article>
-        </aside>
- 
-      </article>
-    </section>
- 
-  </main>
-
-
-
-
-
-
-
-
-</main>
-</body>
+    </footer>
+  </body>
 </html>
